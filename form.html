@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>self details of a student</title>
+        <style>
+            body{
+                background-color: #dbe5e5;
+                font-family: Verdana;
+                text-align: center;
+            }
+            form{
+                background-color: bisque;
+                margin: 50px auto;
+                margin-top: 30px;
+                width: 450px;
+                padding: 20px 20px;
+                box-shadow: 2px 5px 60px rgb(253, 160, 89);
+                text-align: left;
+            }
+            button:hover{
+                color: rgb(5, 6, 5);
+                background-color: rgb(255, 168, 74);
+                font-size: 90%;
+            }
+            button{
+                background-color: chartreuse;
+                border: 2px solid;
+                border-radius: 2px;
+                font-family: inherit;
+                font-size: 12px;
+                display: inline-block;
+                width: 100%;
+                margin-top: 40px;
+                margin-bottom: 20px;                
+            }
+            .form-control{
+                text-align: left;
+                margin-bottom: 20px;
+            }
+            input,textarea,select{
+                background-color: rgb(231, 243, 200);
+                border: 1px solid;
+                border-radius: 3px 5px;
+                font-family: inherit;
+                padding: 8px;
+                display:block;
+                width:95%;
+            }
+            input:focus{
+                background-color: rgb(249, 249, 241);
+            }
+            select:focus{
+                background-color: rgb(244, 244, 236);
+            }
+            textarea:focus{
+                background-color: rgb(246, 246, 238);
+            }
+            input [type="checkbox"]{
+                display: inline-block;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Self Details
+        </h1>
+        <form id="form">
+            <div class="form-control">
+                <label for="name" id="label-name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name"/>
+            </div>
+            <div class="form-control">
+                <label for="father name" id="label-fathername">Father Name</label>
+                <input type="text" id="father name" placeholder="Enter your father name"/>
+            </div>
+            <div class="form-control">
+                <label for="mother name" id="label-mothername">Mother Name</label>
+                <input type="text" id="mother name" placeholder="Enter your mother name"/>
+            </div>
+            <div class="form-control">
+                <label for="college" id="label-college">College</label>
+                <input type="text" id="college" placeholder="Enter your college name"/>
+            </div>
+            <div class="form-control">
+                <label for="branch" id="label-branch">Select Branch</label>
+                <select>
+                    <option value="automobile">AUTOMOBILE</option>
+                    <option value="civil">CIVIL</option>
+                    <option value="chemical">CHEMICAL</option>
+                    <option value="cse">CSE</option>
+                    <option value="ece">ECE</option>
+                    <option value="eee">EEE</option>
+                    <option value="mech">MECHANICAL</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="year" id="label-year">Year</label>
+                <select name="year" id="year">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                </select>
+            </div>
+            <div class="form-control">
+               <label for="email" id="label-email">Email</label>
+               <input type="email" id="email" placeholder="Enter your Email"/>
+            </div>
+            <div class="form-control">
+                <label for="telephone" id="label-telephone">Mobile Number</label>
+                <input type="tel" id="telephone" placeholder="Enter mobile Number"/>
+            </div>
+            <div class="form-control">
+                <label for="birth" id="label-birth">Date Of Birth</label>
+                <input type="date" id="birth" placeholder="Enter your date of birth"/>
+            </div>
+            <div class="form-control">
+                <label for="age" id="label-age">Age</label>
+                <input type="number" id="age" placeholder="Enter your age"/>
+            </div>
+            <div class="form-control">
+                <label >Select your gender</label><br>
+                <label for="gender-1" id="label-gender-1"><input type="radio" id="gender-1" name="recommend">male</label>
+                <label for="gender-2" id="label-gender-2"><input type="radio" id="gender-2" name="recommend">female</label>
+                <label for="gender-3" id="label-gender-3"><input type="radio" id="gender-3" name="recommend">prefer not to say</label>
+            </div>
+            <div class="form-control">
+                <label for="address" id="label-address">Address</label>
+                <textarea name="address" id="address" placeholder="Enter your address"></textarea>
+            </div>
+            <div class="form-control">
+                <label for="blood group" id="label-bloodgroup">Blood Group</label>
+                <input type="text" id="blood group" placeholder="Enter your blood group"/>
+            </div>
+            <div class="form-control">
+                <label for="language" id="label-language">Language Known</label><br>
+                <label for="language1" id="label-language1"><input type="checkbox" id="language1"/>Telugu</label>
+                <label for="language2" id="label-language2"><input type="checkbox" id="language2"/>Hindi</label>
+                <label for="language3" id="label-language3"><input type="checkbox" id="language3"/>English</label>
+            </div>
+            <div class="form-control">
+                <label for="photo" id="label-photo">Attach your recent photo</label>
+                <input type="file" id="photo" placeholder="Attach a photo"/>
+            </div>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </body>
+</html>
